@@ -1,32 +1,32 @@
 * Getting Started
-  * [Installation](getting-started/installation.md)
-  * [Configuration](getting-started/configuration.md)
-  * [Quick Start](getting-started/quick-start.md)
+  * [Installation](swagfishing-docs/getting-started/installation.md)
+  * [Configuration](swagfishing-docs/getting-started/configuration.md)
+  * [Quick Start](swagfishing-docs/getting-started/quick-start.md)
   
 * Core Features
-  * [Fishing System](core-features/fishing-system.md)
-  * [Fish Codex](core-features/fish-codex.md)
-  * [Fish Bag](core-features/fish-bag.md)
-  * [Selling Fish](core-features/selling-fish.md)
-  * [Gutting System](core-features/gutting-system.md)
+  * [Fishing System](swagfishing-docs/core-features/fishing-system.md)
+  * [Fish Codex](swagfishing-docs/core-features/fish-codex.md)
+  * [Fish Bag](swagfishing-docs/core-features/fish-bag.md)
+  * [Selling Fish](swagfishing-docs/core-features/selling-fish.md)
+  * [Gutting System](swagfishing-docs/core-features/gutting-system.md)
   
 * Progression
-  * [Leveling & XP](progression/leveling.md)
-  * [Skill Tree](progression/skill-tree.md)
-  * [Totems](progression/totems.md)
+  * [Leveling & XP](swagfishing-docs/progression/leveling.md)
+  * [Skill Tree](swagfishing-docs/progression/skill-tree.md)
+  * [Totems](swagfishing-docs/progression/totems.md)
 
 * Social Features
-  * [Fishing Friends](social/fishing-friends.md)
-  * [Party Fishing](social/party-fishing.md)
-  * [Tournaments](social/tournaments.md)
+  * [Fishing Friends](swagfishing-docs/social/fishing-friends.md)
+  * [Party Fishing](swagfishing-docs/social/party-fishing.md)
+  * [Tournaments](swagfishing-docs/social/tournaments.md)
   
 * Server Owners
-  * [Web Editor](server-owners/web-editor.md)
-  * [Creating Custom Fish](server-owners/creating-fish.md)
-  * [Admin Commands](server-owners/admin-commands.md)
-  * [Permissions](server-owners/permissions.md)
+  * [Web Editor](swagfishing-docs/server-owners/web-editor.md)
+  * [Creating Custom Fish](swagfishing-docs/server-owners/creating-fish.md)
+  * [Admin Commands](swagfishing-docs/server-owners/admin-commands.md)
+  * [Permissions](swagfishing-docs/server-owners/permissions.md)
 
 * Resources
-  * [Roadmap](resources/roadmap.md)
-  * [FAQ](troubleshooting/faq.md)
-  * [Support](troubleshooting/support.md)
+  * [Roadmap](swagfishing-docs/resources/roadmap.md)
+  * [FAQ](swagfishing-docs/troubleshooting/faq.md)
+  * [Support](swagfishing-docs/troubleshooting/support.md)
