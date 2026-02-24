@@ -12,9 +12,9 @@ SwagFishing completely replaces Minecraft's vanilla fishing with a rich, progres
 4. **Reel in** when you get a bite
 5. **Receive a custom fish** (85% chance) or vanilla loot (15%)
 
-{% hint style="info" %}
+
 The chance to catch custom fish vs vanilla loot is configurable in `config.yml`
-{% endhint %}
+
 
 ### What Determines Fish Spawns?
 
@@ -216,14 +216,14 @@ Fish catch rates will be affected by:
 
 ## Tips for Success
 
-{% hint style="success" %}
+
 **Pro Tips:**
 * Fish in the **correct biome** for target fish
 * Check **time and weather** requirements
 * **Deeper water** = better fish (future)
 * **Party fishing** with friends for bonuses (future)
 * Use **skills** to improve catch rates (future)
-{% endhint %}
+
 
 ## Configuration
 
@@ -244,14 +244,14 @@ fishing:
 
 ## Next Steps
 
-{% content-ref url="fishing-system/rarities.md" %}
+
 [rarities.md](fishing-system/rarities.md)
-{% endcontent-ref %}
 
-{% content-ref url="fishing-system/catching-fish.md" %}
+
+
 [catching-fish.md](fishing-system/catching-fish.md)
-{% endcontent-ref %}
 
-{% content-ref url="../fish-database/all-fish.md" %}
+
+
 [all-fish.md](../fish-database/all-fish.md)
-{% endcontent-ref %}
+
