@@ -151,7 +151,7 @@ SwagFishing is built with community feedback in mind. Features are prioritized b
 ## 📜 Credits
 
 **Developer:** Swag
-**Special Thanks:** FleaMC Staff Team (Elmo, Gekoh)  
+**Special Thanks:** FleaMC Team (Elmo, Gekoh)  
 **Built With:** Java 21, Paper API, Gson, SQLite
 
 ## 📄 License
