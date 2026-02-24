@@ -1,8 +1,6 @@
 # 🎣 Welcome to SwagFishing
 
-{% hint style="info" %}
-**SwagFishing** is a feature-rich, highly customizable fishing plugin for Minecraft servers running Paper/Spigot 1.21+
-{% endhint %}
+> **SwagFishing** is a feature-rich, highly customizable fishing plugin for Minecraft servers running Paper/Spigot 1.21+
 
 ## ✨ What Makes SwagFishing Special?
 
@@ -38,45 +36,18 @@ Everyone has access to the same fishing opportunities. Success comes from:
 
 ## 🚀 Quick Links
 
-<table data-view="cards">
-  <thead>
-    <tr>
-      <th></th>
-      <th></th>
-      <th data-hidden data-card-target data-type="content-ref"></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>📦 Installation</strong></td>
-      <td>Get started in 5 minutes</td>
-      <td><a href="getting-started/installation.md">installation.md</a></td>
-    </tr>
-    <tr>
-      <td><strong>🎣 Fishing Guide</strong></td>
-      <td>Learn the basics</td>
-      <td><a href="core-features/fishing-system.md">fishing-system.md</a></td>
-    </tr>
-    <tr>
-      <td><strong>🐟 Fish Database</strong></td>
-      <td>Browse all fish</td>
-      <td><a href="fish-database/all-fish.md">all-fish.md</a></td>
-    </tr>
-    <tr>
-      <td><strong>🌐 Web Editor</strong></td>
-      <td>Create custom fish</td>
-      <td><a href="server-owners/web-editor.md">web-editor.md</a></td>
-    </tr>
-  </tbody>
-</table>
+| Feature | Description | Link |
+|---------|-------------|------|
+| **📦 Installation** | Get started in 5 minutes | [Installation Guide](swagfishing-docs/getting-started/installation.md) |
+| **🎣 Fishing Guide** | Learn the basics | [Fishing System](swagfishing-docs/core-features/fishing-system.md) |
+| **🌐 Web Editor** | Create custom fish | [Web Editor](swagfishing-docs/server-owners/web-editor.md) |
+| **🗺️ Roadmap** | See what's coming | [Roadmap](swagfishing-docs/resources/roadmap.md) |
 
 ## 📊 Current Status
 
-{% hint style="success" %}
-**Version:** 1.0.0 (Early Development)  
-**Minecraft:** 1.21+ (Paper/Spigot)  
-**Status:** Active Development
-{% endhint %}
+> **Version:** 1.0.0 (Early Development)  
+> **Minecraft:** 1.21+ (Paper/Spigot)  
+> **Status:** Active Development
 
 ### ✅ Completed Features
 - [x] Core fishing mechanics
@@ -124,7 +95,7 @@ A beautiful discovery system that tracks:
 * Individual fish statistics
 * Rarity distribution
 
-### 🌳 Skill Tree
+### 🌳 Skill Tree (Planned)
 Four tiers of skills offering:
 * Catch rate improvements
 * XP multipliers
@@ -150,7 +121,7 @@ SwagFishing is built with community feedback in mind. Features are prioritized b
 
 ## 📜 Credits
 
-**Developer:** Swag
+**Developer:** Swag  
 **Special Thanks:** FleaMC Team (Elmo, Gekoh)  
 **Built With:** Java 21, Paper API, Gson, SQLite
 
@@ -161,7 +132,4 @@ All rights reserved © 2026
 
 ---
 
-{% hint style="warning" %}
-**Need Help?** Check out our [FAQ](troubleshooting/faq.md) or join our Discord for support!
-{% endhint %}
-
+> **⚠️ Need Help?** Check out our FAQ or join our Discord for support!
