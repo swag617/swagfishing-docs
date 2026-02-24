@@ -7,7 +7,7 @@
   <meta name="description" content="SwagFishing - Feature-rich fishing plugin for Minecraft">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   
-  <!-- Custom Theme matching Web Editor -->
+  <!-- Custom Theme -->
   <style>
     :root {
       --gradient-start: #667eea;
@@ -16,13 +16,11 @@
       --secondary-color: #764ba2;
     }
 
-    /* Background Gradient */
     body {
       background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%) !important;
       background-attachment: fixed !important;
     }
 
-    /* Sidebar Styling */
     .sidebar {
       background: rgba(255, 255, 255, 0.98) !important;
       border-radius: 0 15px 15px 0 !important;
@@ -49,7 +47,6 @@
       font-weight: 600 !important;
     }
 
-    /* Content Area */
     .content {
       background: white !important;
       border-radius: 15px !important;
@@ -63,7 +60,6 @@
       margin: 0 auto !important;
     }
 
-    /* Headers */
     .markdown-section h1 {
       color: var(--primary-color) !important;
       font-size: 2.5rem !important;
@@ -86,27 +82,18 @@
       margin-top: 30px !important;
     }
 
-    /* Code */
     .markdown-section code {
       background: #f5f5f5 !important;
       color: var(--secondary-color) !important;
       padding: 3px 8px !important;
       border-radius: 4px !important;
-      font-size: 0.9em !important;
     }
 
     .markdown-section pre {
       background: #2d2d2d !important;
       border-radius: 10px !important;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2) !important;
     }
 
-    .markdown-section pre code {
-      background: transparent !important;
-      color: #f8f8f8 !important;
-    }
-
-    /* Tables */
     .markdown-section table {
       border-radius: 10px !important;
       overflow: hidden !important;
@@ -123,31 +110,18 @@
       padding: 15px !important;
     }
 
-    .markdown-section tbody tr:hover {
-      background: #f8f9fa !important;
-    }
-
-    /* Blockquotes */
     .markdown-section blockquote {
       border-left: 4px solid var(--primary-color) !important;
       background: #f0f4ff !important;
       padding: 15px 20px !important;
       border-radius: 8px !important;
-      margin: 20px 0 !important;
     }
 
-    .markdown-section blockquote p {
-      margin: 0 !important;
-      color: #1976d2 !important;
-    }
-
-    /* Search */
     .search input {
       background: white !important;
       border: 2px solid #e0e0e0 !important;
       border-radius: 8px !important;
       padding: 12px !important;
-      transition: all 0.3s !important;
     }
 
     .search input:focus {
@@ -155,7 +129,6 @@
       box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1) !important;
     }
 
-    /* Cover Page */
     section.cover {
       background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%) !important;
     }
@@ -172,7 +145,6 @@
       border-radius: 25px !important;
       padding: 12px 30px !important;
       font-weight: 600 !important;
-      transition: all 0.3s !important;
     }
 
     section.cover .cover-main > p:last-child a:hover {
@@ -180,14 +152,12 @@
       box-shadow: 0 10px 30px rgba(255,255,255,0.3) !important;
     }
 
-    /* Logo in sidebar */
     .app-name {
       font-size: 1.5rem !important;
       font-weight: 700 !important;
       background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%) !important;
       -webkit-background-clip: text !important;
       -webkit-text-fill-color: transparent !important;
-      background-clip: text !important;
     }
 
     .app-name::before {
@@ -200,46 +170,24 @@
   <script>
     window.$docsify = {
       name: 'SwagFishing',
-      repo: '',
+      homepage: 'README.md',
       loadSidebar: 'swagfishing-docs/sidebar.md',
-      loadNavbar: false,
       coverpage: 'swagfishing-docs/coverpage.md',
-      onlyCover: false,
       auto2top: true,
       maxLevel: 3,
       subMaxLevel: 2,
-      basePath: '/swagfishing-docs/',
+      relativePath: true,
       
       search: {
-        maxAge: 86400000,
         paths: 'auto',
-        placeholder: 'Search documentation...',
-        noData: 'No results found!',
+        placeholder: 'Search...',
         depth: 3
-      },
-      
-      pagination: {
-        previousText: '← Previous',
-        nextText: 'Next →',
-        crossChapter: true,
-        crossChapterText: true,
-      },
-
-      copyCode: {
-        buttonText: 'Copy',
-        errorText: 'Error',
-        successText: 'Copied!'
       }
     }
   </script>
   
-  <!-- Docsify -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
-  
-  <!-- Plugins -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code@2"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-java.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-yaml.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
