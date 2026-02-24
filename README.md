@@ -124,7 +124,7 @@ A beautiful discovery system that tracks:
 * Individual fish statistics
 * Rarity distribution
 
-### 🌳 Skill Tree (Planned)
+### 🌳 Skill Tree
 Four tiers of skills offering:
 * Catch rate improvements
 * XP multipliers
@@ -150,13 +150,13 @@ SwagFishing is built with community feedback in mind. Features are prioritized b
 
 ## 📜 Credits
 
-**Developer:** Swagmaster_1738 (Luke)  
-**Special Thanks:** SwagServ Staff Team (Elmo, MoonlitDeath, Gekoh, Ultra)  
+**Developer:** Swag
+**Special Thanks:** FleaMC Staff Team (Elmo, Gekoh)  
 **Built With:** Java 21, Paper API, Gson, SQLite
 
 ## 📄 License
 
-SwagFishing is proprietary software developed for SwagServ.  
+SwagFishing is proprietary software developed for Swag.  
 All rights reserved © 2026
 
 ---
@@ -164,3 +164,4 @@ All rights reserved © 2026
 {% hint style="warning" %}
 **Need Help?** Check out our [FAQ](troubleshooting/faq.md) or join our Discord for support!
 {% endhint %}
+
