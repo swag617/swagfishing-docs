@@ -133,9 +133,9 @@ plugins/SwagFishing/
 4. **Start server**
 5. Check console for migration messages
 
-{% hint style="warning" %}
+
 **Always backup your database before updating!**
-{% endhint %}
+
 
 ## Troubleshooting Installation
 
@@ -180,14 +180,14 @@ plugins/SwagFishing/
 
 ## Next Steps
 
-{% content-ref url="configuration.md" %}
+
 [configuration.md](configuration.md)
-{% endcontent-ref %}
 
-{% content-ref url="quick-start.md" %}
+
+
 [quick-start.md](quick-start.md)
-{% endcontent-ref %}
 
-{% content-ref url="../core-features/fishing-system.md" %}
+
+
 [fishing-system.md](../core-features/fishing-system.md)
-{% endcontent-ref %}
+
