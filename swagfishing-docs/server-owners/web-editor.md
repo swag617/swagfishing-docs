@@ -36,9 +36,9 @@ web-editor:
   password: "changeme"      # CHANGE THIS!
 ```
 
-{% hint style="danger" %}
+
 **Security Warning:** Always change the default password! The web editor has full control over your fish.
-{% endhint %}
+
 
 ### 2. Open Firewall (If Needed)
 
@@ -228,9 +228,9 @@ give {player} diamond 1
 5. **Click "Save Fish"**
 6. **Reload in-game:** `/swagfish reload`
 
-{% hint style="info" %}
+
 You can only edit **custom fish** (from custom_fish.yml). Base fish (from fish.yml) cannot be edited through the web editor.
-{% endhint %}
+
 
 ## Deleting a Fish
 
@@ -356,14 +356,14 @@ After creating/editing fish:
 
 ## Security Notes
 
-{% hint style="warning" %}
+
 **Important Security Practices:**
 * Change default password immediately
 * Use a strong password (12+ characters)
 * Don't share password publicly
 * Only give access to trusted admins
 * Consider binding to `127.0.0.1` if only local access needed
-{% endhint %}
+
 
 ### Binding to Localhost Only
 
@@ -393,10 +393,10 @@ All endpoints require `Authorization: Bearer {password}` header.
 
 ## Next Steps
 
-{% content-ref url="creating-fish.md" %}
-[creating-fish.md](creating-fish.md)
-{% endcontent-ref %}
 
-{% content-ref url="../config-files/custom-fish.md" %}
+[creating-fish.md](creating-fish.md)
+
+
+
 [custom-fish.md](../config-files/custom-fish.md)
-{% endcontent-ref %}
+
