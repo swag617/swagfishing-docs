@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="SwagFishing - Feature-rich fishing plugin for Minecraft">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/dark.css">
 </head>
 <body>
   <div id="app"></div>
@@ -19,6 +19,7 @@
       auto2top: true,
       maxLevel: 3,
       subMaxLevel: 2,
+      themeColor: '#764ba2',
       
       search: {
         paths: 'auto',
@@ -33,5 +34,102 @@
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-java.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-yaml.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  
+  <style>
+    :root {
+      --theme-color: #764ba2;
+      --theme-color-dark: #667eea;
+    }
+
+    body {
+      background-color: #1a1a1a !important;
+    }
+
+    .sidebar {
+      background-color: #2d2d2d !important;
+      border-right: 1px solid #444 !important;
+    }
+
+    .sidebar-nav li.active > a {
+      color: var(--theme-color) !important;
+      border-right: 2px solid var(--theme-color) !important;
+    }
+
+    .sidebar-nav li a:hover {
+      color: var(--theme-color) !important;
+    }
+
+    .content {
+      background-color: #1e1e1e !important;
+    }
+
+    .markdown-section {
+      color: #e0e0e0 !important;
+    }
+
+    .markdown-section h1,
+    .markdown-section h2,
+    .markdown-section h3,
+    .markdown-section h4 {
+      color: var(--theme-color) !important;
+    }
+
+    .markdown-section a {
+      color: var(--theme-color-dark) !important;
+    }
+
+    .markdown-section a:hover {
+      color: var(--theme-color) !important;
+    }
+
+    .markdown-section code {
+      background-color: #2d2d2d !important;
+      color: var(--theme-color-dark) !important;
+    }
+
+    .markdown-section pre {
+      background-color: #0d0d0d !important;
+    }
+
+    .markdown-section blockquote {
+      border-left: 4px solid var(--theme-color) !important;
+      background-color: #2a2a2a !important;
+      color: #e0e0e0 !important;
+    }
+
+    .markdown-section table {
+      background-color: #2d2d2d !important;
+    }
+
+    .markdown-section thead {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    }
+
+    .markdown-section thead th {
+      color: white !important;
+    }
+
+    .markdown-section tbody tr {
+      border-bottom: 1px solid #444 !important;
+    }
+
+    .markdown-section tbody tr:hover {
+      background-color: #333 !important;
+    }
+
+    section.cover {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    }
+
+    .search input {
+      background-color: #2d2d2d !important;
+      border: 1px solid #444 !important;
+      color: #e0e0e0 !important;
+    }
+
+    .search input:focus {
+      border-color: var(--theme-color) !important;
+    }
+  </style>
 </body>
 </html>
