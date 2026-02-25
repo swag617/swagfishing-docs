@@ -1,4 +1,4 @@
-# 🐟 Fishing System
+# Fishing System
 
 SwagFishing completely replaces Minecraft's vanilla fishing with a rich, progression-based system featuring over 100 unique fish across 5 rarity tiers.
 
@@ -12,63 +12,57 @@ SwagFishing completely replaces Minecraft's vanilla fishing with a rich, progres
 4. **Reel in** when you get a bite
 5. **Receive a custom fish** (85% chance) or vanilla loot (15%)
 
-
-The chance to catch custom fish vs vanilla loot is configurable in `config.yml`
-
+> The chance to catch custom fish vs vanilla loot is configurable in `config.yml`
 
 ### What Determines Fish Spawns?
 
 When you catch a fish, SwagFishing checks multiple conditions:
 
-#### 🌍 Location Requirements
+#### Location Requirements
 
-**Biome**
+**Biome**  
 Fish can be restricted to specific biomes:
 * Ocean fish → Ocean, Deep Ocean, Cold Ocean, etc.
 * River fish → River, Frozen River
 * Swamp fish → Swamp, Mangrove Swamp
 * Jungle fish → Jungle, Bamboo Jungle
 
-**Y-Level (Altitude)**
+**Y-Level (Altitude)**  
 Some fish only spawn at certain heights:
 * Deep ocean fish → Y 0-40
 * Surface fish → Y 60-80
 * Mountain lake fish → Y 100+
 
-**World**
+**World**  
 Fish can be limited to specific worlds:
 * Overworld only
 * Nether only (future feature)
 * End only
 
-#### ⏰ Time Requirements
+#### Time Requirements
 
 Fish can be active only during specific times:
 
-| Time | In-Game Time | Description |
-|------|--------------|-------------|
-| **DAWN** | 0 - 2000 ticks | Sunrise period |
-| **DAY** | 2000 - 10000 ticks | Daytime |
-| **DUSK** | 10000 - 12000 ticks | Sunset period |
-| **NIGHT** | 12000+ ticks | Nighttime |
-| **ANY** | All times | No restriction |
+**DAWN** - 0 to 2000 ticks (Sunrise period)  
+**DAY** - 2000 to 10000 ticks (Daytime)  
+**DUSK** - 10000 to 12000 ticks (Sunset period)  
+**NIGHT** - 12000+ ticks (Nighttime)  
+**ANY** - All times (No restriction)
 
 **Example:** Emerald Trout only spawns at DAWN
 
-#### ☁️ Weather Requirements
+#### Weather Requirements
 
 Fish can require specific weather:
 
-| Weather | Description |
-|---------|-------------|
-| **CLEAR** | No rain or thunder |
-| **RAIN** | Raining |
-| **THUNDER** | Thunderstorm |
-| **ANY** | Any weather |
+**CLEAR** - No rain or thunder  
+**RAIN** - Raining  
+**THUNDER** - Thunderstorm  
+**ANY** - Any weather
 
 **Example:** Jungle Piranha is more active during RAIN
 
-#### 🌊 Depth Requirements (Future)
+#### Depth Requirements (Future)
 
 Fish will spawn based on water depth:
 * **Shallow (< 3 blocks)** - Common fish only
@@ -79,28 +73,28 @@ Fish will spawn based on water depth:
 
 Fish come in 5 rarity tiers, each with increasing rewards:
 
-### ⚪ Quartz (Common)
+### Quartz (Common)
 * **Weight:** High (80-100)
 * **Rewards:** 5-6 XP, 2 Essence, $8-15
 * **Examples:** Common Cod, River Bass, Swamp Catfish
 
-### 💚 Emerald (Uncommon)
+### Emerald (Uncommon)
 * **Weight:** Medium (40-50)
 * **Rewards:** 15-20 XP, 5-6 Essence, $50-70
 * **Examples:** Emerald Trout, Ocean Guardian, Jungle Piranha
 
-### 💙 Sapphire (Rare)
+### Sapphire (Rare)
 * **Weight:** Low (18-25)
 * **Rewards:** 35-45 XP, 12-18 Essence, $150-200
 * **Examples:** Sapphire Marlin, Frozen Pike, Midnight Eel
 
-### ❤️ Ruby (Very Rare)
+### Ruby (Very Rare)
 * **Weight:** Very Low (8-10)
 * **Rewards:** 75-100 XP, 30-40 Essence, $400-500
 * **Broadcasts:** Server announcement when caught!
 * **Examples:** Ruby Tuna, Crimson Shark
 
-### 💜 Amethyst (Mythical)
+### Amethyst (Mythical)
 * **Weight:** Extremely Low (2-3)
 * **Rewards:** 250-300 XP, 100-125 Essence, $1000-1500
 * **Broadcasts:** Epic server announcement!
@@ -145,24 +139,24 @@ You're fishing in the **Ocean** during **Day** with **Clear** weather:
 
 When you catch a fish, you receive:
 
-### 💎 Essence
+### Essence
 A custom currency used for:
 * Crafting totems
 * Buying upgrades
 * Special shop items
 
-### 📈 Experience (XP)
+### Experience (XP)
 Used for leveling up:
 * **FleaJobs Integration:** XP goes to FISHER job
 * **Built-in System:** XP tracks your fishing level
 
-### 💰 Money (Vault)
+### Money (Vault)
 If Vault is installed:
 * Fish track their value
 * Sell fish at the Sell Shop
 * Money goes to your economy balance
 
-### 🎣 Fish Item
+### Fish Item
 A beautiful custom item with:
 * Colored name
 * Rarity badge
@@ -188,42 +182,40 @@ When someone catches a **Ruby** or **Amethyst** fish, the entire server sees:
 
 **Ruby Example:**
 ```
-⚡ Swagmaster_1738 hooked a legendary Ruby Tuna!
+⚡ PlayerName hooked a legendary Ruby Tuna!
 ```
 
 **Amethyst Example:**
 ```
-⚡ INCREDIBLE! Swagmaster_1738 captured the Amethyst Leviathan!
+⚡ INCREDIBLE! PlayerName captured the Amethyst Leviathan!
 ```
 
 ## Environmental Bonuses (Future)
 
 Fish catch rates will be affected by:
 
-### 🌧️ Weather Bonuses
+### Weather Bonuses
 * **Rain:** +10% rare fish chance
 * **Thunder:** +20% rare fish + 15% XP
 
-### 🚤 Boat Fishing
+### Boat Fishing
 * **In Boat:** +10% catch rate (secret bonus!)
 
-### 💧 Standing in Water
+### Standing in Water
 * **Feet in water:** +5% catch rate
 
-### 🌊 Depth Bonus
+### Depth Bonus
 * **Deep water (10+ blocks):** Access to rare fish
 * **Shallow water (< 3 blocks):** Common fish only
 
 ## Tips for Success
 
-
-**Pro Tips:**
-* Fish in the **correct biome** for target fish
-* Check **time and weather** requirements
-* **Deeper water** = better fish (future)
-* **Party fishing** with friends for bonuses (future)
-* Use **skills** to improve catch rates (future)
-
+> **Pro Tips:**
+> * Fish in the **correct biome** for target fish
+> * Check **time and weather** requirements
+> * **Deeper water** = better fish (future)
+> * **Party fishing** with friends for bonuses (future)
+> * Use **skills** to improve catch rates (future)
 
 ## Configuration
 
@@ -241,17 +233,3 @@ fishing:
     ruby: 0.1      # Very Rare
     amethyst: 0.05 # Mythical
 ```
-
-## Next Steps
-
-
-[rarities.md](fishing-system/rarities.md)
-
-
-
-[catching-fish.md](fishing-system/catching-fish.md)
-
-
-
-[all-fish.md](../fish-database/all-fish.md)
-
