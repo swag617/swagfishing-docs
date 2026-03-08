@@ -12,6 +12,7 @@
 </head>
 <body>
   <div id="app"></div>
+  <div id="page-transition"></div>
   <script>
     window.$docsify = {
       name: 'SwagFishing',
@@ -43,6 +44,21 @@
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code@2"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script>
+    document.addEventListener('click', function(e) {
+      var link = e.target.closest('section.cover a');
+      if (!link) return;
+      var href = link.getAttribute('href');
+      // Skip external links (GitHub button etc.)
+      if (!href || href.startsWith('http') || href.startsWith('//')) return;
+
+      var overlay = document.getElementById('page-transition');
+      overlay.classList.add('active');
+      overlay.addEventListener('animationend', function() {
+        overlay.classList.remove('active');
+      }, { once: true });
+    });
+  </script>
 
   <style>
     :root {
@@ -180,9 +196,23 @@
     }
 
     section.cover {
-      background: linear-gradient(135deg, #0f0c29, #302b63, #667eea, #764ba2) !important;
-      background-size: 300% 300% !important;
-      animation: gradientShift 8s ease infinite !important;
+      position: relative !important;
+      background: #0f0c29 !important;
+    }
+
+    section.cover::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #667eea, #764ba2);
+      background-size: 300% 300%;
+      animation: gradientShift 8s ease infinite;
+      z-index: 0;
+    }
+
+    section.cover .cover-main {
+      position: relative;
+      z-index: 1;
     }
 
     section.cover h1 {
@@ -228,6 +258,27 @@
 
     .pagination-item a:hover {
       border-color: var(--theme-color) !important;
+    }
+
+    /* ── Page transition overlay ── */
+    @keyframes transitionFlash {
+      0%   { opacity: 0; transform: scale(0.95); }
+      40%  { opacity: 1; transform: scale(1); }
+      100% { opacity: 0; transform: scale(1.08); }
+    }
+
+    #page-transition {
+      position: fixed;
+      inset: 0;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #667eea, #764ba2);
+      background-size: 300% 300%;
+      z-index: 9999;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    #page-transition.active {
+      animation: transitionFlash 0.7s ease forwards;
     }
 
     /* ── Scrollbar ── */
