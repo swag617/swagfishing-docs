@@ -23,6 +23,13 @@
       maxLevel: 3,
       subMaxLevel: 2,
       themeColor: '#764ba2',
+      plugins: [
+        function(hook) {
+          hook.doneEach(function() {
+            window.scrollTo(0, 0);
+          });
+        }
+      ],
       pagination: {
         previousText: '← Previous',
         nextText: 'Next →',
