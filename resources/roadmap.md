@@ -1,16 +1,17 @@
-# 🗺️ Roadmap
+# Roadmap
 
-This roadmap outlines planned features for SwagFishing, organized by development phases.
+This roadmap outlines the development history and planned future features for SwagFishing.
 
-## ✅ Completed (Phase 1-2)
+---
 
-### Core Systems
-- [x] Custom fishing mechanics
-- [x] 5-tier rarity system
-- [x] 14 base fish collection
-- [x] Location-based spawning (biome, time, weather, Y-level)
-- [x] Weighted random selection
-- [x] Beautiful fish items with auto-generated lore
+## Phase 1-2: Core Systems (Complete)
+
+### Core Fishing
+- [x] Custom fishing mechanics replacing vanilla fishing
+- [x] 5-tier rarity system (QUARTZ / EMERALD / SAPPHIRE / RUBY / AMETHYST)
+- [x] Location-based spawning (biome, time, weather, Y-level, world, region)
+- [x] Weighted random selection with rarity multipliers
+- [x] Beautiful fish items with colored names and rarity lore
 
 ### Data & Persistence
 - [x] SQLite database system
@@ -21,374 +22,159 @@ This roadmap outlines planned features for SwagFishing, organized by development
 
 ### UI & Commands
 - [x] Fish Codex GUI (Pokédex-style collection viewer)
-- [x] Admin menu GUI
-- [x] Custom fish manager GUI
-- [x] `/swagfish` command structure
-- [x] Beautiful catch messages
+- [x] `/fish` command structure
+- [x] Catch messages with server-wide broadcasts for Ruby/Amethyst
 
 ### Admin Tools
 - [x] Web-based fish editor
 - [x] REST API for fish management
 - [x] Password-protected admin panel
-- [x] Live fish creation/editing/deletion
 
-### Integration
+### Integrations
 - [x] FleaJobs job XP integration
 - [x] Vault economy support
-- [x] Fallback systems for optional dependencies
 
 ---
 
-## 🚧 Phase 3: Player Storage & Economy (Current)
-
-**Focus:** Give players ways to manage and profit from their catches
+## Phase 3: Player Storage & Economy (Complete)
 
 ### Fish Bag System
-- [ ] Inventory-style storage GUI
-- [ ] Store caught fish
-- [ ] Browse collection
-- [ ] Withdraw fish to inventory
-- [ ] Sort by rarity, type, date caught
+- [x] Persistent fish storage GUI (54-slot, paginated)
+- [x] Auto-add on catch (configurable)
+- [x] Filter by rarity
+- [x] Withdraw fish to inventory
 
 ### Sell Shop
-- [ ] GUI for selling fish
-- [ ] Batch selling
-- [ ] Price display
-- [ ] Confirmation system
-- [ ] Vault integration for payments
+- [x] GUI for selling fish
+- [x] Batch selling (Sell All button)
+- [x] Price display per fish
+- [x] Vault integration for payments
 
 ### Gutting System
-- [ ] Convert fish → essence
-- [ ] Bonus essence from gutting
-- [ ] GUI for gutting process
-- [ ] Bulk gutting option
+- [x] Convert fish to essence via GUI
+- [x] Bonus essence vs. selling (configurable multiplier)
+- [x] Bulk gutting input slots
 
-**Estimated Completion:** 1-2 weeks
+### Economy & Progression
+- [x] PlaceholderAPI support
+- [x] `/fish top` leaderboard
+- [x] Tournaments (competitive fishing with leaderboards)
+- [x] Deliveries (fishing quests with essence rewards)
 
----
+### Lore Schemes
+- [x] SchemeManager with 5 built-in schemes (one per rarity)
+- [x] Custom schemes in custom_schemes.yml
+- [x] Auto-applied when fish has empty lore
+- [x] Full placeholder set ({displayName}, {rarity}, {xp}, {essence}, etc.)
 
-## 📊 Phase 4: Environmental Systems
-
-**Focus:** Make fishing location and conditions matter
-
-### Weather Bonuses
-- [ ] Rain: +10% rare fish chance
-- [ ] Thunder: +20% rare fish + 15% XP boost
-- [ ] Clear weather requirements for specific fish
-- [ ] Visual indicators when bonuses active
-
-### Depth System
-- [ ] Calculate water depth below fishing hook
-- [ ] Shallow (< 3 blocks): Common fish only
-- [ ] Medium (3-10 blocks): Common + Uncommon
-- [ ] Deep (10+ blocks): All rarities
-- [ ] New fish property: `min-depth`
-
-### Boat Fishing Bonus
-- [ ] Detect when fishing from boat
-- [ ] +10% catch rate boost (secret bonus)
-- [ ] Special message on first discovery
-
-### Standing in Water
-- [ ] Detect player standing in water
-- [ ] +5% catch rate boost
-- [ ] Stackable with other bonuses
-
-**Estimated Completion:** 1 week
+### Web Editor Enhancements
+- [x] Live Minecraft-style tooltip preview (real-time)
+- [x] Schemes tab (view, clone, create, apply)
+- [x] Clone fish button
+- [x] Search and filter bar (by name, rarity, biome)
+- [x] Sort controls (by name, rarity, XP, sell price)
+- [x] Color picker (inserts &#RRGGBB hex codes at cursor)
 
 ---
 
-## 👥 Phase 5: Social Features
+## Phase 4: Skills, Totems, Bait & Events (Complete)
+
+### Dynamic Events
+- [x] EventManager with 3 event types
+- [x] FISHING_FRENZY: 2.0× XP + 1.5× essence
+- [x] RARE_TIDE: 2.5× weight multiplier for SAPPHIRE+ fish
+- [x] ESSENCE_SURGE: 2.0× essence
+- [x] Admin commands for start/stop/info
+- [x] Server-wide broadcast on event start and end
+
+### Skill Tree
+- [x] SkillManager + SkillTreeGUI (54-slot)
+- [x] 6 skills implemented (XP Boost, Essence Boost, Rare Finder, Market Expert, Lucky Cast, Delivery Expert)
+- [x] Skill point earning system (earned on level-up, with bonus milestones)
+- [x] Essence cost per upgrade
+- [x] Shift-click refund system (configurable)
+
+### Totem System
+- [x] TotemManager + TotemGUI (54-slot)
+- [x] 10 totems (basic_luck through ultimate_fisher)
+- [x] Level-based unlock progression
+- [x] Equip/unequip with configurable max slots
+- [x] Admin give command
+
+### Bait System
+- [x] BaitManager + BaitGUI (54-slot)
+- [x] 15 baits across 4 tiers (Common, Uncommon, Rare, Legendary)
+- [x] XP_BOOST, ESSENCE_BOOST, RARE_BOOST, SELL_BOOST effect types
+- [x] Limited uses per activation
+- [x] Admin give command
+
+### Multiplier Stacking
+- [x] Full multiplicative stacking across all systems
+- [x] finalXP = base × skillXp × totemXp × eventXp × baitXp
+- [x] finalEssence = base × skillEssence × totemEssence × eventEssence × baitEssence
+
+---
+
+## Phase 5: Environmental Systems (Planned)
+
+**Focus:** Make the fishing location and conditions matter even more
+
+- [ ] Weather bonuses (rain, thunder) applying to catch rates
+- [ ] Depth system (shallow vs. deep water fish pools)
+- [ ] Boat fishing bonus
+- [ ] Visual indicators for active environmental bonuses
+
+---
+
+## Phase 6: Social Features (Planned)
 
 **Focus:** Fishing with friends
 
-### Fishing Friends System
-- [ ] Add/remove friends list
-- [ ] `/swagfish friends` commands
-- [ ] Friends list GUI
-- [ ] Online status indicators
-
-### Party Fishing
-- [ ] Create/join fishing parties
-- [ ] `/swagfish party` commands
-- [ ] Proximity-based (must be within 50 blocks)
-- [ ] Shared XP pool (split evenly)
-- [ ] Party bonus: +5% XP per member
-- [ ] Friend bonus: Additional +5% if fishing with friends
-
-### Party GUI
-- [ ] View party members
-- [ ] Invite players
-- [ ] Kick members
-- [ ] Leave party
-- [ ] See combined stats
-
-**Estimated Completion:** 2 weeks
+- [ ] Fishing Friends system (friend list, online status)
+- [ ] Party fishing (shared XP, proximity bonuses)
+- [ ] Party GUI
 
 ---
 
-## 🎉 Phase 6: Events & Tournaments
-
-**Focus:** Competitive and cooperative content
-
-### Random Server Events
-- [ ] Fishing Frenzy (2x catch rate, 30 min)
-- [ ] Lucky Hour (better rarity drops, 1 hour)
-- [ ] Essence Surge (2x essence, 45 min)
-- [ ] Server-wide announcements
-- [ ] Countdown timers
-- [ ] Random scheduling (every 4-8 hours)
-- [ ] Config-based event customization
-
-### Tournament Expansion
-- [ ] Automated tournament scheduling
-- [ ] Multiple tournament types:
-  - Most fish caught
-  - Biggest fish
-  - Rarest fish
-  - Total value
-- [ ] Leaderboard GUI
-- [ ] Reward distribution
-- [ ] Tournament history
-
-### Delivery System Expansion
-- [ ] Daily fishing quests
-- [ ] "Bring me X fish" missions
-- [ ] Randomized deliveries
-- [ ] Scaling rewards
-- [ ] Streak bonuses
-
-**Estimated Completion:** 2-3 weeks
-
----
-
-## 🌳 Phase 7: Skill Tree Implementation
-
-**Focus:** Long-term progression and customization
-
-### Skill System
-- [ ] Skill tree GUI (4 tiers)
-- [ ] Skill point earning system
-- [ ] Skill unlock requirements
-- [ ] Skill descriptions & previews
-
-### Tier 1 Skills (Entry-level)
-- [ ] Lucky Line (+2% rare fish/level, max +10%)
-- [ ] Quick Hook (-5% wait time/level, max -25%)
-- [ ] Treasure Hunter (+5% essence/level, max +25%)
-- [ ] Haggler (+3% sell price/level, max +15%)
-
-### Tier 2 Skills (Mid-tier)
-- [ ] Storm Fisher (2x weather bonuses)
-- [ ] Deep Diver (catch rare fish in shallow water)
-- [ ] Night Owl (+20% XP at night)
-- [ ] Party Leader (+10% party bonus)
-
-### Tier 3 Skills (Advanced)
-- [ ] Master Angler (+5% double fish chance)
-- [ ] Essence Surge (10% double essence chance)
-- [ ] Nether Adaptation (unlock nether fishing)
-- [ ] Fortune's Favor (catch fish 1 tier higher)
-
-### Tier 4 Skills (Master)
-- [ ] Legendary Hunter (Mythical spawn +50%)
-- [ ] Cthulhu's Challenger (+25% boss damage)
-- [ ] Master Gutter (2x gutting essence)
-- [ ] Ocean's Blessing (all buffs stack)
-
-**Estimated Completion:** 2 weeks
-
----
-
-## 🗿 Phase 8: Totems & Buffs
-
-**Focus:** Temporary power-ups
-
-### Totem System
-- [ ] Totem crafting (essence + materials)
-- [ ] Totem inventory GUI
-- [ ] Equip/unequip totems
-- [ ] Multiple totem slots (unlock with skills)
-- [ ] Totem durability
-
-### Totem Types
-- [ ] Speed Totem (faster bites)
-- [ ] Luck Totem (better rarities)
-- [ ] Wealth Totem (more money)
-- [ ] Essence Totem (more essence)
-- [ ] Experience Totem (more XP)
-- [ ] Combo totems (multiple effects)
-
-**Estimated Completion:** 1-2 weeks
-
----
-
-## 🔥 Phase 9: Nether Fishing
+## Phase 7: Nether Fishing (Planned)
 
 **Focus:** Completely new fishing dimension
 
-### Nether Mechanics
-- [ ] Fishing in lava detection
-- [ ] Nether-specific fish pool (15-20 fish)
-- [ ] Fireproof fishing rod requirement or skill
-- [ ] Unique lava fishing particles
-- [ ] Nether ambient sounds
-
-### Nether Fish
-- [ ] Design nether fish (Magma Bass, Lava Eel, etc.)
-- [ ] Hellfire Tuna (legendary)
-- [ ] Obsidian Pufferfish
+- [ ] Lava fishing detection
+- [ ] Nether-specific fish pool
 - [ ] Nether-exclusive rewards
-- [ ] Higher baseline rewards than overworld
-
-### Nether Features
-- [ ] Bastion fishing spots
-- [ ] Fortress fishing spots
-- [ ] Soul Sand Valley special fish
-- [ ] Crimson/Warped forest varieties
-
-**Estimated Completion:** 2 weeks
 
 ---
 
-## 🐙 Phase 10: Boss Fish (Major Update)
+## Phase 8: Boss Fish (Planned)
 
 **Focus:** Epic multiplayer encounters
 
-### Cthulhu Boss Event
-- [ ] Quarterly spawn system
-- [ ] Multiplayer requirement (3+ players)
-- [ ] Boss health bar
-- [ ] Attack phases
-- [ ] Damage tracking per player
-- [ ] Loot distribution system
-- [ ] Friend bonus (+5% damage, better loot)
-
-### ModelEngine Integration
-- [ ] Custom 3D Cthulhu model
-- [ ] Boss animations
-- [ ] Particle effects
-- [ ] Sound effects
-- [ ] Spawn animations
-
-### Boss Mechanics
-- [ ] Phase 1: Tentacle attacks
-- [ ] Phase 2: Summon minions
-- [ ] Phase 3: Enrage mode
-- [ ] Loot tiers based on contribution
-- [ ] Title rewards
-- [ ] Unique Cthulhu fish drop
-
-### Other Boss Fish (Future)
+- [ ] Cthulhu boss event
 - [ ] Kraken (Ocean boss)
-- [ ] Leviathan (Deep ocean boss)
-- [ ] Phoenix Fish (Nether boss)
-- [ ] Void Serpent (End boss)
-
-**Estimated Completion:** 4-6 weeks (major update)
+- [ ] Additional boss fish
 
 ---
 
-## 🎨 Phase 11: Polish & Optimization
+## Phase 9: Polish & Optimization (Planned)
 
 **Focus:** Performance, UX, and quality of life
 
-### Performance
-- [ ] Database optimization
-- [ ] Caching improvements
+- [ ] Database optimization and caching
 - [ ] Async operations for heavy tasks
-- [ ] Memory leak fixes
-
-### QOL Features
-- [ ] Fishing statistics
-- [ ] Personal bests tracking
-- [ ] Fish caught timeline
 - [ ] Achievements system
-- [ ] Cosmetic titles
-- [ ] Chat formatting improvements
-
-### Admin Tools
-- [ ] Fish spawn tester
-- [ ] Debug commands
-- [ ] Performance metrics
-- [ ] Database backup/restore GUI
-
-### Documentation
-- [ ] Complete GitBook documentation
-- [ ] Video tutorials
-- [ ] API documentation
-- [ ] Config examples
-
-**Estimated Completion:** 2-3 weeks
+- [ ] Additional admin tooling
 
 ---
 
-## 🔮 Future Considerations (Phase 12+)
+## Notes
 
-These are ideas being explored but not yet scheduled:
-
-### Fishing Minigames
-- Quick-time events for rare fish
-- Button mashing for big fish
-- Timing-based hook system
-
-### Fishing Competitions
-- Daily challenges
-- Weekly leaderboards
-- Seasonal rankings
-- Rewards shop
-
-### Aquariums
-- Display caught fish in tanks
-- Breeding system
-- Fish trading between players
-
-### Fishing Lore
-- Story-driven discoveries
-- Hidden legendary fish
-- Quest chains
-- Fishing journal
-
-### Resource Pack Integration
-- Custom fish textures
-- Custom rod models
-- Particle effects
-- Sound replacements
-
-### Additional Integrations
-- Discord webhooks for rare catches
-- PlaceholderAPI expansions
-- WorldGuard region bonuses
-- MythicMobs fishing mobs
-
----
-
-## 📊 Community Requested Features
-
-Based on staff feedback:
-
-- [x] No trash loot (completed)
-- [ ] Party fishing (Phase 5)
-- [ ] Weather/storm buffs (Phase 4)
-- [ ] Depth system (Phase 4)
-- [ ] Boat fishing bonus (Phase 4)
-- [ ] Nether fishing (Phase 9)
-- [ ] Cthulhu boss (Phase 10)
-- [ ] Random server events (Phase 6)
-- [ ] Skill tree expansion (Phase 7)
-- [ ] No codex-gated buffs (design philosophy - permanent)
-
----
-
-## 📝 Notes
-
-* Timeline estimates are approximate
 * Phases may be reordered based on community feedback
 * Bug fixes and hotfixes released as needed
-* Major versions will be announced in advance
+* Major versions announced in advance
 
-**Want to influence the roadmap?** Join our Discord and share your ideas!
+**Want to influence the roadmap?** Submit ideas via GitHub issues!
 
 ---
 
-*Last Updated: February 24, 2026*
+*Last Updated: March 7, 2026*

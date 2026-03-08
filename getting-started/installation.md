@@ -37,11 +37,13 @@ The plugin will automatically:
 
 ### Step 3: Verify Installation
 
-Run this command in console or as an admin:
+Run this command in-game as an admin:
 
 ```
-swagfish version
+/fish version
 ```
+
+> **Command Alias:** `/fish` is the primary command (alias for `/swagfish`). Both work identically throughout the plugin.
 
 You should see:
 ```
@@ -103,7 +105,7 @@ Check console for:
 2. Get a fishing rod
 3. Go to an ocean biome
 4. Start fishing!
-5. Run `/swagfish codex` to view your catches
+5. Run `/fish codex` to view your catches
 
 ## File Structure
 
@@ -126,7 +128,7 @@ plugins/SwagFishing/
 1. **Stop server**
 2. **Backup your data:**
    ```
-   plugins/SwagFishing/swagfishing.db
+   plugins/SwagFishing/fishing.db
    plugins/SwagFishing/custom_fish.yml
    ```
 3. Replace `SwagFishing.jar`
@@ -170,7 +172,7 @@ plugins/SwagFishing/
 
 ### Fish Not Loading
 
-**Issue:** `/swagfish reload` shows "Loaded 0 fish"
+**Issue:** `/fish reload` shows "Loaded 0 fish"
 
 **Solutions:**
 1. Check `fish.yml` exists in `plugins/SwagFishing/`

@@ -20,54 +20,40 @@ When you catch a fish, SwagFishing checks multiple conditions:
 
 #### Location Requirements
 
-**Biome**  
+**Biome**
 Fish can be restricted to specific biomes:
-* Ocean fish → Ocean, Deep Ocean, Cold Ocean, etc.
-* River fish → River, Frozen River
-* Swamp fish → Swamp, Mangrove Swamp
-* Jungle fish → Jungle, Bamboo Jungle
+* Ocean fish - Ocean, Deep Ocean, Cold Ocean, etc.
+* River fish - River, Frozen River
+* Swamp fish - Swamp, Mangrove Swamp
+* Jungle fish - Jungle, Bamboo Jungle
 
-**Y-Level (Altitude)**  
+**Y-Level (Altitude)**
 Some fish only spawn at certain heights:
-* Deep ocean fish → Y 0-40
-* Surface fish → Y 60-80
-* Mountain lake fish → Y 100+
+* Deep ocean fish - Y 0-40
+* Surface fish - Y 60-80
+* Mountain lake fish - Y 100+
 
-**World**  
-Fish can be limited to specific worlds:
-* Overworld only
-* Nether only (future feature)
-* End only
+**World**
+Fish can be limited to specific worlds (overworld, custom worlds, etc.)
 
 #### Time Requirements
 
 Fish can be active only during specific times:
 
-**DAWN** - 0 to 2000 ticks (Sunrise period)  
-**DAY** - 2000 to 10000 ticks (Daytime)  
-**DUSK** - 10000 to 12000 ticks (Sunset period)  
-**NIGHT** - 12000+ ticks (Nighttime)  
-**ANY** - All times (No restriction)
-
-**Example:** Emerald Trout only spawns at DAWN
+**DAWN** - 0 to 2000 ticks (Sunrise period)
+**DAY** - 2000 to 10000 ticks (Daytime)
+**DUSK** - 10000 to 12000 ticks (Sunset period)
+**NIGHT** - 12000+ ticks (Nighttime)
+**ANY** - All times (no restriction)
 
 #### Weather Requirements
 
 Fish can require specific weather:
 
-**CLEAR** - No rain or thunder  
-**RAIN** - Raining  
-**THUNDER** - Thunderstorm  
+**CLEAR** - No rain or thunder
+**RAIN** - Raining
+**THUNDER** - Thunderstorm
 **ANY** - Any weather
-
-**Example:** Jungle Piranha is more active during RAIN
-
-#### Depth Requirements (Future)
-
-Fish will spawn based on water depth:
-* **Shallow (< 3 blocks)** - Common fish only
-* **Medium (3-10 blocks)** - Common + Uncommon
-* **Deep (10+ blocks)** - All rarities
 
 ## Rarity System
 
@@ -109,7 +95,8 @@ Fish don't spawn with equal probability. The system uses a weighted random selec
 1. **Filter eligible fish** based on location, time, weather
 2. **Calculate total weight** from all eligible fish
 3. **Apply rarity multipliers** from config
-4. **Random selection** weighted by fish rarity + individual weight
+4. **Apply skill/totem/event/bait multipliers**
+5. **Random selection** weighted by fish rarity + individual weight
 
 ### Example Scenario
 
@@ -117,7 +104,7 @@ You're fishing in the **Ocean** during **Day** with **Clear** weather:
 
 **Eligible Fish:**
 * Common Cod (weight: 100, rarity: QUARTZ)
-* Ocean Guardian (weight: 40, rarity: EMERALD)  
+* Ocean Guardian (weight: 40, rarity: EMERALD)
 * Sapphire Marlin (weight: 25, rarity: SAPPHIRE)
 
 **Rarity Weights** (from config):
@@ -141,18 +128,18 @@ When you catch a fish, you receive:
 
 ### Essence
 A custom currency used for:
-* Crafting totems
-* Buying upgrades
-* Special shop items
+* Upgrading skills in the Skill Tree
+* Other upgrades and unlocks
 
 ### Experience (XP)
 Used for leveling up:
 * **FleaJobs Integration:** XP goes to FISHER job
 * **Built-in System:** XP tracks your fishing level
+* Skill points are earned when you level up
 
 ### Money (Vault)
 If Vault is installed:
-* Fish track their value
+* Fish track their sell value
 * Sell fish at the Sell Shop
 * Money goes to your economy balance
 
@@ -171,11 +158,6 @@ When you catch a fish, you see:
 SwagFish » You caught a [Rarity Color][Fish Name]!
 ```
 
-**Examples:**
-* `SwagFish » You caught a Common Cod!` (white)
-* `SwagFish » You caught a Emerald Trout!` (green)
-* `SwagFish » You caught a Ruby Tuna!` (red)
-
 ### Legendary Broadcasts
 
 When someone catches a **Ruby** or **Amethyst** fish, the entire server sees:
@@ -190,32 +172,31 @@ When someone catches a **Ruby** or **Amethyst** fish, the entire server sees:
 ⚡ INCREDIBLE! PlayerName captured the Amethyst Leviathan!
 ```
 
-## Environmental Bonuses (Future)
+## Multiplier Stacking
 
-Fish catch rates will be affected by:
+All bonuses from skills, totems, events, and bait stack **multiplicatively**:
 
-### Weather Bonuses
-* **Rain:** +10% rare fish chance
-* **Thunder:** +20% rare fish + 15% XP
+```
+finalXP = base × skillXp × totemXp × eventXp × baitXp
+finalEssence = base × skillEssence × totemEssence × eventEssence × baitEssence
+```
 
-### Boat Fishing
-* **In Boat:** +10% catch rate (secret bonus!)
+For example, a fish with 100 base XP, with XP Boost skill (level 5 = +50%), an XP Multiplier totem (1.25×), and during a Fishing Frenzy event (2.0×):
 
-### Standing in Water
-* **Feet in water:** +5% catch rate
-
-### Depth Bonus
-* **Deep water (10+ blocks):** Access to rare fish
-* **Shallow water (< 3 blocks):** Common fish only
+```
+100 × 1.5 × 1.25 × 2.0 = 375 XP
+```
 
 ## Tips for Success
 
 > **Pro Tips:**
-> * Fish in the **correct biome** for target fish
-> * Check **time and weather** requirements
-> * **Deeper water** = better fish (future)
-> * **Party fishing** with friends for bonuses (future)
-> * Use **skills** to improve catch rates (future)
+> * Fish in the **correct biome** for your target fish
+> * Check **time and weather** requirements in the Fish Codex
+> * Use **skills** to improve XP, essence, and catch rates
+> * Equip **totems** for persistent passive buffs
+> * Use **bait** for temporary boosts when hunting specific rarities
+> * Watch for **server events** — Fishing Frenzy and Rare Tide events dramatically increase rewards
+> * **Party fishing** with friends is planned for a future update
 
 ## Configuration
 
@@ -225,10 +206,10 @@ All fishing mechanics can be tuned in `config.yml`:
 fishing:
   enabled: true
   custom-fish-chance: 0.85  # 85% custom fish, 15% vanilla
-  
+
   rarity-weights:
     quartz: 1.0    # Common
-    emerald: 0.5   # Uncommon  
+    emerald: 0.5   # Uncommon
     sapphire: 0.25 # Rare
     ruby: 0.1      # Very Rare
     amethyst: 0.05 # Mythical
