@@ -2,7 +2,7 @@
 
 > The most feature-rich fishing plugin for Minecraft — complete progression system, custom fish, skill trees, and a built-in web editor.
 
-<span style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:20px;padding:4px 12px;font-size:13px;font-weight:600;margin-right:6px;">Paper 1.21+</span><span style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:20px;padding:4px 12px;font-size:13px;font-weight:600;margin-right:6px;">Java 17+</span><span style="background:rgba(118,75,162,0.6);border:1px solid rgba(118,75,162,0.8);border-radius:20px;padding:4px 12px;font-size:13px;font-weight:600;">Free</span>
+<span style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:20px;padding:4px 12px;font-size:13px;font-weight:600;margin-right:6px;">Paper 1.21+</span><span style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:20px;padding:4px 12px;font-size:13px;font-weight:600;margin-right:6px;">Java 17+</span>
 
 - 🎣 100+ custom fish across 5 rarity tiers
 - 🌳 Deep skill tree, totems, and bait progression
