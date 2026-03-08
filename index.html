@@ -42,6 +42,7 @@
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-java.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-yaml.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/progress-bar.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code@2"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
   <script>
@@ -95,6 +96,26 @@
 
     .sidebar-nav li a:hover {
       color: var(--theme-color) !important;
+    }
+
+    /* Home button */
+    .sidebar-nav > ul > li:first-child > a {
+      display: block;
+      margin: 0 10px 8px;
+      padding: 7px 14px;
+      background: linear-gradient(135deg, rgba(102,126,234,0.15), rgba(118,75,162,0.15));
+      border: 1px solid rgba(118,75,162,0.35);
+      border-radius: 8px;
+      color: #c0b3d8 !important;
+      font-weight: 600;
+      font-size: 13px;
+      text-decoration: none !important;
+    }
+
+    .sidebar-nav > ul > li:first-child > a:hover {
+      background: linear-gradient(135deg, rgba(102,126,234,0.25), rgba(118,75,162,0.25));
+      border-color: var(--theme-color);
+      color: white !important;
     }
 
     /* Section headers (bold lines in sidebar.md) */

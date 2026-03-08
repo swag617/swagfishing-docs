@@ -31,11 +31,12 @@ Passive buffs come from the **Skill Tree**, unlocked through grinding and player
 * Players can customize their fishing style
 * Progression is always guaranteed
 
-### No Pay-to-Win, No RNG Walls
-Everyone has access to the same fishing opportunities. Success comes from:
-* Time invested (XP and levels)
-* Strategic skill choices
-* Knowledge of fish spawns and conditions
+### Fully Customizable
+Every aspect of SwagFishing is designed to be tailored to your server:
+* Custom fish with unique stats, lore, and rarity
+* Configurable skill trees, totem effects, and bait bonuses
+* Flexible economy — tie fish values to whatever economy plugin you use
+* Lore schemes let you define exactly how fish lore looks across your server
 
 ## Quick Links
 

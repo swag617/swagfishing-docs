@@ -10,5 +10,5 @@
 - 🌐 Built-in web admin panel — edit fish live, no restart needed
 - ⚡ Server events, tournaments & delivery quests
 
-[Get Started](getting-started/installation.md)
+[Get Started](README.md)
 [GitHub](https://github.com/swag617/swagfishing-docs)
