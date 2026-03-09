@@ -32,7 +32,4 @@
   * [Admin Commands](server-owners/admin-commands.md)
   * [Permissions](server-owners/permissions.md)
 
-* Resources
-  * [Roadmap](resources/roadmap.md)
-  * [FAQ](troubleshooting/faq.md)
-  * [Support](troubleshooting/support.md)
+
