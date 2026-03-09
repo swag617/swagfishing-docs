@@ -55,7 +55,7 @@ Every aspect of SwagFishing is designed to be tailored to your server:
   ROADMAP TRACKER — To mark a phase complete:
   1. Change its outer div style from the PLANNED style to the COMPLETE style
   2. Change its icon from ⬡ to ✓
-  3. Update the progress bar width and the "X of 9" counter
+  3. Update the progress bar width and the "X of 11" counter
 
   COMPLETE style:  background:#1a1230; border:1px solid #764ba2
   PLANNED style:   background:#1e1e1e; border:1px solid #383838
@@ -64,10 +64,10 @@ Every aspect of SwagFishing is designed to be tailored to your server:
 <div style="background:#161616;border:1px solid #2a2a2a;border-radius:14px;padding:28px 28px 22px;margin:8px 0 28px;font-family:inherit">
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
     <span style="color:#c0c0c0;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase">Development Progress</span>
-    <span style="background:linear-gradient(135deg,#667eea,#764ba2);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-size:13px;font-weight:700">4 of 9 phases complete</span>
+    <span style="background:linear-gradient(135deg,#667eea,#764ba2);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-size:13px;font-weight:700">5 of 11 phases complete</span>
   </div>
   <div style="height:5px;background:#2a2a2a;border-radius:3px;margin-bottom:22px;overflow:hidden">
-    <div style="height:100%;width:44%;background:linear-gradient(90deg,#667eea,#764ba2);border-radius:3px"></div>
+    <div style="height:100%;width:46%;background:linear-gradient(90deg,#667eea,#764ba2);border-radius:3px"></div>
   </div>
   <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:10px">
     <div style="background:#1a1230;border:1px solid #764ba2;border-radius:10px;padding:14px 12px;text-align:center">
@@ -90,29 +90,39 @@ Every aspect of SwagFishing is designed to be tailored to your server:
       <div style="color:#e0e0e0;font-size:12px;font-weight:700;margin-bottom:3px">Phase 4b</div>
       <div style="color:#9b8ec4;font-size:11px;line-height:1.4">Tournaments &amp; Deliveries</div>
     </div>
-    <div style="background:#1e1e1e;border:1px solid #383838;border-radius:10px;padding:14px 12px;text-align:center;opacity:.6">
-      <div style="width:32px;height:32px;border-radius:50%;background:#2a2a2a;border:2px solid #444;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-size:15px;color:#555">⬡</div>
-      <div style="color:#777;font-size:12px;font-weight:700;margin-bottom:3px">Phase 5</div>
-      <div style="color:#555;font-size:11px;line-height:1.4">Environmental Systems</div>
+    <div style="background:#1a1230;border:1px solid #764ba2;border-radius:10px;padding:14px 12px;text-align:center">
+      <div style="width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,#667eea,#764ba2);display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-size:15px;color:#fff;font-weight:700">✓</div>
+      <div style="color:#e0e0e0;font-size:12px;font-weight:700;margin-bottom:3px">Phase 5</div>
+      <div style="color:#9b8ec4;font-size:11px;line-height:1.4">Environmental Systems</div>
     </div>
     <div style="background:#1e1e1e;border:1px solid #383838;border-radius:10px;padding:14px 12px;text-align:center;opacity:.6">
       <div style="width:32px;height:32px;border-radius:50%;background:#2a2a2a;border:2px solid #444;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-size:15px;color:#555">⬡</div>
       <div style="color:#777;font-size:12px;font-weight:700;margin-bottom:3px">Phase 6</div>
-      <div style="color:#555;font-size:11px;line-height:1.4">Social Features</div>
+      <div style="color:#555;font-size:11px;line-height:1.4">Fish Size, Weight &amp; Records</div>
     </div>
     <div style="background:#1e1e1e;border:1px solid #383838;border-radius:10px;padding:14px 12px;text-align:center;opacity:.6">
       <div style="width:32px;height:32px;border-radius:50%;background:#2a2a2a;border:2px solid #444;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-size:15px;color:#555">⬡</div>
       <div style="color:#777;font-size:12px;font-weight:700;margin-bottom:3px">Phase 7</div>
-      <div style="color:#555;font-size:11px;line-height:1.4">Nether Fishing</div>
+      <div style="color:#555;font-size:11px;line-height:1.4">Attunements</div>
     </div>
     <div style="background:#1e1e1e;border:1px solid #383838;border-radius:10px;padding:14px 12px;text-align:center;opacity:.6">
       <div style="width:32px;height:32px;border-radius:50%;background:#2a2a2a;border:2px solid #444;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-size:15px;color:#555">⬡</div>
       <div style="color:#777;font-size:12px;font-weight:700;margin-bottom:3px">Phase 8</div>
-      <div style="color:#555;font-size:11px;line-height:1.4">Boss Fish</div>
+      <div style="color:#555;font-size:11px;line-height:1.4">Social Features</div>
     </div>
     <div style="background:#1e1e1e;border:1px solid #383838;border-radius:10px;padding:14px 12px;text-align:center;opacity:.6">
       <div style="width:32px;height:32px;border-radius:50%;background:#2a2a2a;border:2px solid #444;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-size:15px;color:#555">⬡</div>
       <div style="color:#777;font-size:12px;font-weight:700;margin-bottom:3px">Phase 9</div>
+      <div style="color:#555;font-size:11px;line-height:1.4">Nether Fishing</div>
+    </div>
+    <div style="background:#1e1e1e;border:1px solid #383838;border-radius:10px;padding:14px 12px;text-align:center;opacity:.6">
+      <div style="width:32px;height:32px;border-radius:50%;background:#2a2a2a;border:2px solid #444;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-size:15px;color:#555">⬡</div>
+      <div style="color:#777;font-size:12px;font-weight:700;margin-bottom:3px">Phase 10</div>
+      <div style="color:#555;font-size:11px;line-height:1.4">Boss Fish</div>
+    </div>
+    <div style="background:#1e1e1e;border:1px solid #383838;border-radius:10px;padding:14px 12px;text-align:center;opacity:.6">
+      <div style="width:32px;height:32px;border-radius:50%;background:#2a2a2a;border:2px solid #444;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-size:15px;color:#555">⬡</div>
+      <div style="color:#777;font-size:12px;font-weight:700;margin-bottom:3px">Phase 11</div>
       <div style="color:#555;font-size:11px;line-height:1.4">Polish &amp; Optimization</div>
     </div>
   </div>

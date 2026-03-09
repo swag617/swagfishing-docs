@@ -115,38 +115,62 @@ This roadmap outlines the development history and planned future features for Sw
 
 ---
 
-## Phase 5: Environmental Systems (Planned)
+## Phase 5: Environmental Systems (Complete)
 
-**Focus:** Make the fishing location and conditions matter even more
+**Focus:** Make fishing location and conditions matter more
 
-- [ ] Weather bonuses (rain, thunder) applying to catch rates
-- [ ] Depth system (shallow vs. deep water fish pools)
-- [ ] Boat fishing bonus
-- [ ] Visual indicators for active environmental bonuses
+- [x] Weather catch rate bonuses (rain/thunder reduce wait time)
+- [x] Depth system (shallow vs. deep fish pools)
+- [x] Boat fishing bonus (XP/essence multiplier)
+- [x] Visual indicators — actionbar showing active bonuses
+- [x] Lunar phases (moon cycle affects rarity weights)
+- [x] `/fish weather` — toggle visual rain/storm effects per player
 
 ---
 
-## Phase 6: Social Features (Planned)
+## Phase 6: Fish Size, Weight & Records (Planned)
+
+**Focus:** Per-catch variance and competitive records
+
+- [ ] Per-catch randomized size/weight affecting sell price
+- [ ] Size integrated into tournament scoring
+- [ ] Personal best records per species per player
+- [ ] Server-wide all-time catch records leaderboard
+- [ ] Cron-scheduled tournaments (specific day/time)
+
+---
+
+## Phase 7: Attunements (Planned)
+
+**Focus:** Craftable rod enhancements
+
+- [ ] Craftable rod enhancements (separate slot system, works alongside ExecutableItems)
+- [ ] 10–15 attunement types (Storm Caller, Deep Hook, Lure Master, Essence Draw, etc.)
+- [ ] Crafted using essence + fishing materials
+- [ ] AttunementGUI + web editor support
+
+---
+
+## Phase 8: Social Features (Planned)
 
 **Focus:** Fishing with friends
 
-- [ ] Fishing Friends system (friend list, online status)
+- [ ] Fishing Friends system
 - [ ] Party fishing (shared XP, proximity bonuses)
 - [ ] Party GUI
 
 ---
 
-## Phase 7: Nether Fishing (Planned)
+## Phase 9: Nether Fishing (Planned)
 
 **Focus:** Completely new fishing dimension
 
 - [ ] Lava fishing detection
-- [ ] Nether-specific fish pool
-- [ ] Nether-exclusive rewards
+- [ ] Nether-specific fish pool + exclusive rewards
 
 ---
 
-## Phase 8: Boss Fish (Planned)
+## Phase 10: Boss Fish (Planned)
 
 **Focus:** Epic multiplayer encounters
 
@@ -156,14 +180,15 @@ This roadmap outlines the development history and planned future features for Sw
 
 ---
 
-## Phase 9: Polish & Optimization (Planned)
+## Phase 11: Polish & Optimization (Planned)
 
 **Focus:** Performance, UX, and quality of life
 
-- [ ] Database optimization and caching
-- [ ] Async operations for heavy tasks
+- [ ] Database optimization + async improvements
 - [ ] Achievements system
-- [ ] Additional admin tooling
+- [ ] Holographic leaderboards (DecentHolograms/HolographicDisplays)
+- [ ] Bait crafting recipes from fishing materials
+- [ ] Discord bot integration
 
 ---
 
@@ -177,4 +202,4 @@ This roadmap outlines the development history and planned future features for Sw
 
 ---
 
-*Last Updated: March 7, 2026*
+*Last Updated: March 9, 2026*
